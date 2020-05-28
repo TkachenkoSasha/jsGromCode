@@ -1,14 +1,41 @@
-function checker(arr){
-    let min = arr[0];
-    let max = arr[0];
-
-    for(let i = 0; i < arr.length; ++i){
-        if(min < arr[i]){
-            min = arr[i];
-        } else if(max > arr[i]){
-            max = arr[i]
-        }
+function sortAsc(arr){
+    if(!Array.isArray(arr)){
+        return null;
     }
 
-    return (min + max) > 1000;
+    for(let i = 0; i < arr.length; ++i){
+        let curr = i;
+        for(let j = i + 1; j <= arr.length; ++j){
+            if(arr[curr] > arr[j]){
+                curr = j; 
+            }
+        }
+
+        let tmp = arr[curr];
+        arr[curr] = arr[i];
+        arr[i] = tmp;
+    }
+
+    return arr;
+}
+
+function sortDesc(arr){
+    if(!Array.isArray(arr)){
+        return null;
+    }
+
+    for(let i = 0; i < arr.length; ++i){
+        let curr = i;
+        for(let j = i + 1; j <= arr.length; ++j){
+            if(arr[curr] < arr[j]){
+                curr = j; 
+            }
+        }
+
+        let tmp = arr[curr];
+        arr[curr] = arr[i];
+        arr[i] = tmp;
+    }
+
+    return arr;
 }
