@@ -17,7 +17,7 @@ console.log('true && true && true: ' ,true && true && true);
 /* || находит первое истинное значение */
 console.log('\'text\' || false: ', 'text' || false);
 console.log('true || text: ', true || 'text');
-console.log('undefined || null || 0 || '' || null: ', undefined || null || 0 || '' || null);
+console.log('undefined || null || 0 || \'\' || null: ', undefined || null || 0 || '' || null);
 
 const customAmount = null; // не выводим
 const defaultAmount = 17; // не выводим
