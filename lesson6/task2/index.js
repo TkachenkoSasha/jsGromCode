@@ -8,5 +8,5 @@ function getSum(arr){
         sum += el;
     }
 
-    return sum
+    return sum;
 }
