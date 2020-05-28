@@ -16,7 +16,7 @@ console.log('\'ab\' > \'b\':', 'ab' > 'b');
 /* строгое сравнение */
 
 console.log(17 === 1);
-console.log('17 === 17:', 17 === 17);
+console.log('17 === 17:' + (17 === 17));
 console.log('17 === \'17\':', 17 === '17');
 console.log('17 === true:', 17 === true);
 console.log('0 === \'\':', 0 === '');
