@@ -4,15 +4,14 @@ function removeDuplicates(array){
     }
     let result = [];
     for(let i = 0; i < array.length; ++i){
-        let curr = array[i]
+        let curr = array[i];
         let j = 0;
-        for(; j < array.length; ++j){
-            if(curr === array[j] && i !== j){
-               break; 
+        for(; j < result.length; ++j){
+            if(curr === result[j] && i !== j){
+                break;
             }
         }
-
-        if(j >= array.length){
+        if(j >= result.length){
             result.push(curr);
         }
     }
