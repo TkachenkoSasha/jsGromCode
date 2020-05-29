@@ -1,5 +1,5 @@
 function squareArray(arr){
-    if(!Array.isArray(array)){
+    if(!Array.isArray(arr)){
         return null;
     }
 
